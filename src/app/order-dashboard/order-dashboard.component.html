@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-6">
+    <app-first-five-orders *ngFor="let order of orders" [firstFiveOrders]="order"></app-first-five-orders>
+    <app-all-other-orders *ngFor="let order of orders" [allOtherOrders]="order"></app-all-other-orders>
+  </div>
+  <div class="col-md-6">
+    <button class="btn btn-primary" style="margin-right:5px" (click)="onStartWorkday()">Start Workday</button>
+    <button class="btn btn-danger" (click)="onEndWorkday()">End Workday</button>
+  </div>
+</div>
